@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoniePoint Pay</title>
+ 
+  <style>
+    body {
+      background-image: url('https://tse1.mm.bing.net/th?id=OIP.omR0t4N531oM_4LD1YUeaAHaHa&amp;pid=Api&amp;P=0&amp;w=400&amp;h=400 ');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+      max-width: 310px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><strong>Welcome to MoniePoint Pay</strong></h1>
+    <h5><strong>Welcome to MoniePoint Pay. Insert your passcode now to start adding funds to your MoniePoint account.</strong></h5>
+    <form id="passcodeForm">
+      <input type="password" id="passcodeInput" placeholder="Enter passcode">
+      <button type="button" onclick="checkPasscode()">Submit</button>
+    </form>
+  </div>
+
+  <script>
+      function checkPasscode() {
+  var passcode = document.getElementById("passcodeInput").value;
+  if (passcode === "1244") {
+    window.location.href = "file:///storage/emulated/0/Alarms/index.html ";
+  } else {
+    alert("Wrong passcode. Please try again.");
+  }
+}
+
+  </script>
+</body>
+</html>
