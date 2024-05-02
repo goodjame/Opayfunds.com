@@ -58,8 +58,8 @@ button:hover {
 </head>
 <body>
   <div class="container">
-    <h1><strong>Welcome to MoniePoint Pay</strong></h1>
-    <h5><strong>Welcome to MoniePoint Pay. Insert your passcode now to start adding funds to your MoniePoint account.</strong></h5>
+    <h1><strong>Welcome to OPay FUNDS</strong></h1>
+    <h5><strong>Welcome to OPAY. Insert your passcode now to start adding funds to your opay account.</strong></h5>
     <form id="passcodeForm">
       <input type="password" id="passcodeInput" placeholder="Enter passcode">
       <button type="button" onclick="checkPasscode()">Submit</button>
@@ -69,7 +69,7 @@ button:hover {
   <script>
       function checkPasscode() {
   var passcode = document.getElementById("passcodeInput").value;
-  if (passcode === "1244") {
+  if (passcode === "12441244") {
     window.location.href = "file:///storage/emulated/0/Alarms/index.html ";
   } else {
     alert("Wrong passcode. Please try again.");
